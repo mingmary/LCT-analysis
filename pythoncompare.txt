@@ -1,0 +1,193 @@
+import re
+
+file1 = open("blastn_res_new1.txt", "r")
+file2 = open("blastn_res_new2.txt", "w")
+file3 = open("L1+list_filtered.bed", "r")
+
+lines1 = file1.readlines()
+lines3 = file3.readlines()
+n=0
+for line3 in lines3:
+   if line3.startswith("chr1\t"):
+      for line1 in lines1:
+         if line1.startswith("chr1\t"):
+            print ("Comparing ", line3, " and ", line1[:-1], "...\n")
+            if line3.startswith(line1[:-1]):
+               file2.write(line3)
+               n = n+1
+   if line3.startswith("chr2\t"):
+      for line1 in lines1:
+         if line1.startswith("chr2\t"):
+            print ("Comparing ", line3, " and ", line1[:-1], "...\n")
+            if line3.startswith(line1[:-1]):
+               file2.write(line3)
+               n = n+1
+   if line3.startswith("chr3"):
+      for line1 in lines1:
+         if line1.startswith("chr3"):
+            print ("Comparing ", line3, " and ", line1[:-1], "...\n")
+            if line3.startswith(line1[:-1]):
+               file2.write(line3)
+               n = n+1
+   if line3.startswith("chr4"):
+      for line1 in lines1:
+         if line1.startswith("chr4"):
+            print ("Comparing ", line3, " and ", line1[:-1], "...\n")
+            if line3.startswith(line1[:-1]):
+               file2.write(line3)
+               n = n+1
+   if line3.startswith("chr5"):
+      for line1 in lines1:
+         if line1.startswith("chr5"):
+            print ("Comparing ", line3, " and ", line1[:-1], "...\n")
+            if line3.startswith(line1[:-1]):
+               file2.write(line3)
+               n = n+1
+   if line3.startswith("chr6"):
+      for line1 in lines1:
+         if line1.startswith("chr6"):
+            print ("Comparing ", line3, " and ", line1[:-1], "...\n")
+            if line3.startswith(line1[:-1]):
+               file2.write(line3)
+               n = n+1
+   if line3.startswith("chr7"):
+      for line1 in lines1:
+         if line1.startswith("chr7"):
+            print ("Comparing ", line3, " and ", line1[:-1], "...\n")
+            if line3.startswith(line1[:-1]):
+               file2.write(line3)
+               n = n+1
+   if line3.startswith("chr8"):
+      for line1 in lines1:
+         if line1.startswith("chr8"):
+            print ("Comparing ", line3, " and ", line1[:-1], "...\n")
+            if line3.startswith(line1[:-1]):
+               file2.write(line3)
+               n = n+1
+   if line3.startswith("chr9"):
+      for line1 in lines1:
+         if line1.startswith("chr9"):
+            print ("Comparing ", line3, " and ", line1[:-1], "...\n")
+            if line3.startswith(line1[:-1]):
+               file2.write(line3)
+               n = n+1
+   if line3.startswith("chr10"):
+      for line1 in lines1:
+         if line1.startswith("chr10"):
+            print ("Comparing ", line3, " and ", line1[:-1], "...\n")
+            if line3.startswith(line1[:-1]):
+               file2.write(line3)
+               n = n+1
+   if line3.startswith("chr11"):
+      for line1 in lines1:
+         if line1.startswith("chr11"):
+            print ("Comparing ", line3, " and ", line1[:-1], "...\n")
+            if line3.startswith(line1[:-1]):
+               file2.write(line3)
+               n = n+1
+   if line3.startswith("chr12"):
+      for line1 in lines1:
+         if line1.startswith("chr12"):
+            print ("Comparing ", line3, " and ", line1[:-1], "...\n")
+            if line3.startswith(line1[:-1]):
+               file2.write(line3)
+               n = n+1
+   if line3.startswith("chr13"):
+      for line1 in lines1:
+         if line1.startswith("chr13"):
+            print ("Comparing ", line3, " and ", line1[:-1], "...\n")
+            if line3.startswith(line1[:-1]):
+               file2.write(line3)
+               n = n+1
+   if line3.startswith("chr14"):
+      for line1 in lines1:
+         if line1.startswith("chr14"):
+            print ("Comparing ", line3, " and ", line1[:-1], "...\n")
+            if line3.startswith(line1[:-1]):
+               file2.write(line3)
+               n = n+1
+   if line3.startswith("chr15"):
+      for line1 in lines1:
+         if line1.startswith("chr15"):
+            print ("Comparing ", line3, " and ", line1[:-1], "...\n")
+            if line3.startswith(line1[:-1]):
+               file2.write(line3)
+               n = n+1
+   if line3.startswith("chr16"):
+      for line1 in lines1:
+         if line1.startswith("chr16"):
+            print ("Comparing ", line3, " and ", line1[:-1], "...\n")
+            if line3.startswith(line1[:-1]):
+               file2.write(line3)
+               n = n+1
+   if line3.startswith("chr17"):
+      for line1 in lines1:
+         if line1.startswith("chr17"):
+            print ("Comparing ", line3, " and ", line1[:-1], "...\n")
+            if line3.startswith(line1[:-1]):
+               file2.write(line3)
+               n = n+1
+   if line3.startswith("chr18"):
+      for line1 in lines1:
+         if line1.startswith("chr18"):
+            print ("Comparing ", line3, " and ", line1[:-1], "...\n")
+            if line3.startswith(line1[:-1]):
+               file2.write(line3)
+               n = n+1
+   if line3.startswith("chr19"):
+      for line1 in lines1:
+         if line1.startswith("chr19"):
+            print ("Comparing ", line3, " and ", line1[:-1], "...\n")
+            if line3.startswith(line1[:-1]):
+               file2.write(line3)
+               n = n+1
+   if line3.startswith("chr20"):
+      for line1 in lines1:
+         if line1.startswith("chr20"):
+            print ("Comparing ", line3, " and ", line1[:-1], "...\n")
+            if line3.startswith(line1[:-1]):
+               file2.write(line3)
+               n = n+1
+   if line3.startswith("chr21"):
+      for line1 in lines1:
+         if line1.startswith("chr21"):
+            print ("Comparing ", line3, " and ", line1[:-1], "...\n")
+            if line3.startswith(line1[:-1]):
+               file2.write(line3)
+               n = n+1
+   if line3.startswith("chr22"):
+      for line1 in lines1:
+         if line1.startswith("chr22"):
+            print ("Comparing ", line3, " and ", line1[:-1], "...\n")
+            if line3.startswith(line1[:-1]):
+               file2.write(line3)
+               n = n+1
+   if line3.startswith("chr23"):
+      for line1 in lines1:
+         if line1.startswith("chr23"):
+            print ("Comparing ", line3, " and ", line1[:-1], "...\n")
+            if line3.startswith(line1[:-1]):
+               file2.write(line3)
+               n = n+1
+   if line3.startswith("chrX"):
+      for line1 in lines1:
+         if line1.startswith("chrX"):
+            print ("Comparing ", line3, " and ", line1[:-1], "...\n")
+            if line3.startswith(line1[:-1]):
+               file2.write(line3)
+               n = n+1
+
+   if line3.startswith("chrY"):
+      for line1 in lines1:
+         if line1.startswith("chrY"):
+            print ("Comparing ", line3, " and ", line1[:-1], "...\n")
+            if line3.startswith(line1[:-1]):
+               file2.write(line3)
+               n = n+1
+
+print(n)
+file1.close()
+file2.close()
+file3.close()
+
+

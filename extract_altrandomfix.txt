@@ -1,0 +1,10 @@
+import re
+
+file1 = open('L1+list.bed')
+lines = file1.readlines()
+file2 = open('L1+list_filtered.bed', 'w')
+for line in lines:
+   if not (re.search(r"chr(\w)+_", line)):
+      file2.write(line)
+file1.close()
+file2.close()

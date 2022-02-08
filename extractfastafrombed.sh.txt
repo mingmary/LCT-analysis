@@ -1,0 +1,10 @@
+#!/bin/bash
+#PBS -l walltime=24:00:00
+#PBS -l nodes=1:ppn=1
+#PBS -l vmem=24g
+#PBS -N sample
+#PBS -o output.txt
+#PBS -e error.txt
+
+module load bedtools
+bedtools getfasta -fi <human genome in FASTA> -bed L1+list_filtered.bed -fo L1+list_filtered.fa
